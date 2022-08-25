@@ -1,1 +1,3 @@
 type HelloWorld = string
+
+export {}
