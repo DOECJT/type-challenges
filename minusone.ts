@@ -25,7 +25,7 @@ type NumberToArray<T extends string, C extends 0[] = []> =
       : never
     : C
 
-type MinusOne<T extends number, A extends 0[] = NumberToArray<`${T}`>> =
+export type MinusOne<T extends number, A extends 0[] = NumberToArray<`${T}`>> =
   A extends [0, ...infer Rest]
     ? Rest['length']
     : never
