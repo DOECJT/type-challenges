@@ -15,3 +15,7 @@ export type NumberToArray<T extends number, C extends 0[] = []> =
   C['length'] extends T
     ? C
     : NumberToArray<T, [...C, 0]>
+
+export type IsTrue<T extends true> = T
+
+export type IsFalse<T extends false> = T
