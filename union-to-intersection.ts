@@ -1,6 +1,6 @@
 import { Expect, Equal } from './utils'
 
-type UnionToIntersection<U, F = U extends U ? (arg: U) => void : never> =
+export type UnionToIntersection<U, F = U extends U ? (arg: U) => void : never> =
   [F] extends [(arg: infer I) => void]
     ? I
     : never

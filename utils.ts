@@ -19,3 +19,5 @@ export type NumberToArray<T extends number, C extends 0[] = []> =
 export type IsTrue<T extends true> = T
 
 export type IsFalse<T extends false> = T
+
+export type ExpectExtends<VALUE, EXPECTED> = EXPECTED extends VALUE ? true : false
